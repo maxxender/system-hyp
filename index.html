@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.css">
+    <title>System-hypo</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: black;color: white;">
+        <h1>system-hp</h1>
+    </header>
+    <div class="actions">
+        <h2>Que voulez-vous faire ?</h2>
+            <ul class="nav nav-pills">
+                <li><a href="#connexion">Me connectez</a></li>
+                <li><a href="#ajouter-branchement">Ajouter un branchement</a></li>
+                <li><a href="#reprise-abonnement">Reprise abonnement</a></li>
+                <li><a href="#etablir-devis">Etablir un devis</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane" id="connexion">
+                    <h3>Entrez vos identifiants pourr vous connectez</h3>
+                    <form action="" method="post" class="form-horizontal col-lg-6">
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="" class="col-lg-3 control-label">Nom :</label>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control">
+                                    <span class="help-block"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="" class="col-lg-3 control-label">Prénom :</label>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control">
+                                    <span class="help-block"></span>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="row">
+                            <div class="form-group">
+                                <label for="" class="col-lg-3 control-label">Mot de passe :</label>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control">
+                                    <span class="help-block"></span>
+                                </div>
+                            </div>
+                       </div>
+                       <div class="form-group">
+                        <button class="pull-right btn btn-primary col-lg-4">valider</button>
+                       </div>
+                    </form>
+                </div>
+                <div class="tab-pane active" id="ajouter-branchement">
+                    <h3>Ajouter les informations de branchements</h3>
+                </div>
+                <div class="tab-pane" id="reprise-abonnement">
+                    <h3>Ajouter les informations de reprise d'abonnment</h3>
+                </div>
+                <div class="tab-pane" id="etablir-devis">
+                    <h3>Ajouter les informations du devis</h3>
+                    <form action="" method="post" class="form-horizontal col-lg-6">
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="" class="col-lg-3 control-label">Num compteur :</label>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control">
+                                    <span class="help-block"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="" class="col-lg-3 control-label">Nom du client :</label>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control">
+                                    <span class="help-block"></span>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="row">
+                            <div class="form-group">
+                                <label for="" class="col-lg-3 control-label">Num compteur :</label>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control">
+                                    <span class="help-block"></span>
+                                </div>
+                            </div>
+                       </div>
+                       <div class="form-group">
+                        <button class="pull-right btn btn-primary col-lg-4">valider</button>
+                       </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+
+    <script src="bootstrap-3.3.7/bootstrap-3.3.7/dist/js/jquery-3.3.1.js"></script>
+    <script src="bootstrap-3.3.7/bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+    <script>
+        $(function(){
+            $('a')
+            .click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            })
+            .on('shown.bs.tab', function (e) {
+                $('#actif span').html($(e.target).text());
+                $('#precedent span').html($(e.relatedTarget).text());
+            });
+        });
+    </script>
+</body>
+</html>

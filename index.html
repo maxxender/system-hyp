@@ -16,90 +16,170 @@
 <body>
     <h1>system-hyp</h1>
     <div class="actions">
-        <h2>Que voulez-vous faire ?</h2>
-            <ul class="nav nav-pills">
-                <li><a href="#connexion">Me connectez</a></li>
-                <li><a href="#ajouter-branchement">Ajouter un branchement</a></li>
-                <li><a href="#reprise-abonnement">Reprise abonnement</a></li>
-                <li><a href="#etablir-devis">Etablir un devis</a></li>
-            </ul>
+            <div id="accordeon" class="panel-group col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <a href="#faire-devis"  data-parent="#accordeon"  data-toggle="collapse">Etablir un devis pour : </a>
+                        </h3>
+                    </div>
+
+                    <div id="faire-devis" class="panel-collapse collapse in">
+                        <div class="panel-body">          
+                            <div>
+                                <ul class="nav nav-pills">
+                                    <li><a href="#devis-nouveau-branchement">Nouveau Branchement</a></li>
+                                    <li><a href="#devis-reprise-abonnement">Reprise d'abonnement</a></li>
+                                    <li><a href="#devis-remplacement-compteur">Remplacement compteur</a></li>
+                                    <li><a href="#devis-vente-compteur">Vente de compteur</a></li>
+                                    <li><a href="#devis-extension-reseau">Extension réseau</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <a href="#faire-demande"  data-parent="#accordeon"  data-toggle="collapse">Faire une demande pour : </a>
+                        </h3>
+                    </div>
+
+                    <div id="faire-demande" class="panel-collapse collapse in">
+                        <div class="panel-body">      
+                            <div>
+                                <ul class="nav nav-pills">
+                                    <li><a href="">Nouveau Branchement</a></li>
+                                    <li><a href="">Reprise d'abonnement</a></li>
+                                    <li><a href="">Remplacement compteur</a></li>
+                                    <li><a href="">Vente de compteur</a></li>
+                                    <li><a href="">Extension réseau</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <a href="#voir-donnees"  data-parent="#accordeon"  data-toggle="collapse">Voir les données  : </a>
+                        </h3>
+                    </div>
+
+                    <div id="voir-donnees" class="panel-collapse collapse in">
+                        <div class="panel-body">      
+                            <div>
+                                <ul class="nav nav-pills">
+                                    <li><a href="">compteurs branchés</a></li>
+                                    <li><a href="">Abonnement repris</a></li>
+                                    <li><a href="">Compteur remplacés</a></li>
+                                    <li><a href="">Compteur vendus</a></li>
+                                    <li><a href="">Extension réseau éffectué</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+           
             <div class="tab-content">
-                <div class="tab-pane" id="connexion">
-                    <h3>Entrez vos identifiants pourr vous connectez</h3>
+                <div class="tab-pane active" id="devis-nouveau-branchement">
+                    <legend>Entrez le devis pour un nouveau branchement</legend>
                     <form action="" method="post" class="form-horizontal col-lg-6">
                         <div class="row">
                             <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Nom :</label>
+                                <label for="" class="col-lg-3 control-label">   Police :</label>
                                 <div class="col-lg-9">
                                     <input type="text" class="form-control">
                                     <span class="help-block"></span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
+
                             <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Prénom :</label>
+                                <label for="" class="col-lg-3 control-label">   Numéro compteur :</label>
                                 <div class="col-lg-9">
                                     <input type="text" class="form-control">
                                     <span class="help-block"></span>
                                 </div>
                             </div>
-                        </div>
-                       <div class="row">
+
                             <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Mot de passe :</label>
+                                <label for="" class="col-lg-3 control-label">   Date d'exécution :</label>
+                                <div class="col-lg-9">
+                                    <input type="date" name="" id="" class="form-control">                                 
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-lg-3 control-label">Quartier :</label>
                                 <div class="col-lg-9">
                                     <input type="text" class="form-control">
                                     <span class="help-block"></span>
                                 </div>
                             </div>
-                       </div>
-                       <div class="form-group">
-                        <button class="pull-right btn btn-primary col-lg-4">valider</button>
-                       </div>
+                            <div class="form-group">
+                                <label for="" class="col-lg-3 control-label">Index de pause :</label>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control">
+                                    <span class="help-block"></span>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary pull-right col-lg-5">Valider</button>
+                        </div>
                     </form>
                 </div>
-                <div class="tab-pane active" id="ajouter-branchement">
+               
+                <div class="tab-pane" id="devis-reprise-abonnement">
                     <h3>Ajouter les informations de branchements</h3>
                 </div>
-                <div class="tab-pane" id="reprise-abonnement">
-                    <h3>Ajouter les informations de reprise d'abonnment</h3>
-                </div>
-                <div class="tab-pane" id="etablir-devis">
-                    <h3>Ajouter les informations du devis</h3>
+
+                <div class="tab-pane" id="devis-remplacement-compteur">
+                <legend>Etablir le devis pour un remplacement de compteur</legend>
                     <form action="" method="post" class="form-horizontal col-lg-6">
                         <div class="row">
                             <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Num compteur :</label>
+                                <label for="" class="col-lg-3 control-label">   Police :</label>
                                 <div class="col-lg-9">
                                     <input type="text" class="form-control">
                                     <span class="help-block"></span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
+
                             <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Nom du client :</label>
+                                <label for="" class="col-lg-3 control-label">   Numéro compteur :</label>
                                 <div class="col-lg-9">
                                     <input type="text" class="form-control">
                                     <span class="help-block"></span>
                                 </div>
                             </div>
-                        </div>
-                       <div class="row">
+
                             <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Num compteur :</label>
+                                <label for="" class="col-lg-3 control-label">   Date d'exécution :</label>
+                                <div class="col-lg-9">
+                                    <input type="date" name="" id="" class="form-control">                                 
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-lg-3 control-label">Quartier :</label>
                                 <div class="col-lg-9">
                                     <input type="text" class="form-control">
                                     <span class="help-block"></span>
                                 </div>
                             </div>
-                       </div>
-                       <div class="form-group">
-                        <button class="pull-right btn btn-primary col-lg-4">valider</button>
-                       </div>
-                    </form>
+                            <div class="form-group">
+                                <label for="" class="col-lg-3 control-label">Index de pause :</label>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control">
+                                    <span class="help-block"></span>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary pull-right col-lg-5">Valider</button>    
                 </div>
+                
             </div>
     </div>
 

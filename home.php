@@ -13,7 +13,7 @@
             padding: 0;
         }
         .nav-pills li{
-            border: 1px solid blue;
+            border: 1px solid skyblue;
         }
     </style>
 </head>

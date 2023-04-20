@@ -199,10 +199,7 @@
                             <div class="form-group">
                                 <label for="" class="col-lg-3 control-label">Ville :</label>
                                 <div class="col-lg-9">
-                                    <select name="" id="" class="form-control">
-                                        <?php for ($i = 0; $i < count($villes); $i++):?>
-                                            <option value="<?= $villes[$i] ?>"><?= $villes[$i] ?></option>
-                                        <?php endfor; ?>
+                                    <select name="" id="" class="form-control select-ville">
                                     </select>
                                     <span class="help-block"></span>
                                 </div>
@@ -255,10 +252,7 @@
                             <div class="form-group">
                                 <label for="" class="col-lg-3 control-label">Ville :</label>
                                 <div class="col-lg-9">
-                                    <select name="" id="" class="form-control">
-                                        <?php for ($i = 0; $i < count($villes); $i++):?>
-                                            <option value="<?= $villes[$i] ?>"><?= $villes[$i] ?></option>
-                                        <?php endfor; ?>
+                                    <select name="" id="" class="form-control select-ville">
                                     </select>
                                     <span class="help-block"></span>
                                 </div>
@@ -325,10 +319,7 @@
                             <div class="form-group">
                                 <label for="" class="col-lg-3 control-label">Ville :</label>
                                 <div class="col-lg-9">
-                                    <select name="" id="" class="form-control">
-                                        <?php for ($i = 0; $i < count($villes); $i++):?>
-                                            <option value="<?= $villes[$i] ?>"><?= $villes[$i] ?></option>
-                                        <?php endfor; ?>
+                                    <select name="" id="" class="form-control select-ville">
                                     </select>
                                     <span class="help-block"></span>
                                 </div>
@@ -388,10 +379,7 @@
                             <div class="form-group">
                                 <label for="" class="col-lg-3 control-label">Ville :</label>
                                 <div class="col-lg-9">
-                                    <select name="" id="" class="form-control">
-                                        <?php for ($i = 0; $i < count($villes); $i++):?>
-                                            <option value="<?= $villes[$i] ?>"><?= $villes[$i] ?></option>
-                                        <?php endfor; ?>
+                                    <select name="" id="" class="form-control select-ville">
                                     </select>
                                     <span class="help-block"></span>
                                 </div>
@@ -684,6 +672,7 @@
 
     <script src="bootstrap-3.3.7/bootstrap-3.3.7/dist/js/jquery-3.3.1.js"></script>
     <script src="bootstrap-3.3.7/bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+    <script src="ville.js"></script>
     <script>
         $(function(){
             $('a')
@@ -698,7 +687,7 @@
         });
 
         (function(){
-            var xhr = new XMLHttpRequest();
+            /*var xhr = new XMLHttpRequest();
             var url = 'http://localhost/system-hyp/ville-benin.php';
             xhr.open('GET',url);
             xhr.onreadystatechange = function(e){
@@ -717,7 +706,8 @@
                     }
                 }
             xhr.setRequestHeader('X-Requested-With', 'xmlhttprequest');
-            xhr.send(null);
+            xhr.send(null);*/
+
         })();
     </script>
 </body>

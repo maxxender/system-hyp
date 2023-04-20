@@ -33,9 +33,14 @@ var villes = [
     "Grand Popo",
     "Kouandé"
 ];
+var selectsVille = document.querySelectorAll('.select-ville');
 
 villes.forEach(ville => {
-    var optionEle = document.createElement('option')
-    optionEle.innerHTML = ville
-    document.querySelector('.select-ville').appendChild(optionEle)
+   
+    //document.querySelector('.select-ville').appendChild(optionEle)
+    selectsVille.forEach(select =>{
+        var optionEle = document.createElement('option')
+        optionEle.innerHTML = ville
+        select.appendChild(optionEle)
+    })
 });

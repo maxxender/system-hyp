@@ -107,7 +107,7 @@
                         </div>
                     </div>
                 </div>
-
+ 
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
@@ -121,8 +121,9 @@
                                 <ul class="nav nav-pills">
                                     <li class="col-lg-12"><a href="#deposer-compteur" class="col-lg-12">Déposer compteur</a></li>
                                     <li class="col-lg-12"><a href="#compteur-stock" class="col-lg-12">compteurs en Stocks</a></li>
-                                    <li class="col-lg-12"><a href="" class="col-lg-12">Compteurs Déposés</a></li>
+                                    <li class="col-lg-12"><a href="" class="col-lg-12">Déposez un compteur</a></li>
                                     <li class="col-lg-12"><a href="#poser-compteur" class="col-lg-12">Poser Compteur</a></li>
+                                    <li class="col-lg-12"><a href="#affecter-compteurs" class="col-lg-12">Affecter Compteurs</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -784,9 +785,23 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Date de Pose</label>
+                        <label for="" class="col-lg-3 control-label">Date d'affectation</label>
                         <div class="col-lg-9">
                             <input type="date" name="date-pose" id="" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="col-lg-3 control-label">Numéro Compteur :</label>
+                        <div class="col-lg-9">
+                            <input type="text" class="form-control">
+                            <span class="help-block"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="col-lg-3 control-label">Numéro Police :</label>
+                        <div class="col-lg-9">
+                            <input type="text" class="form-control">
+                            <span class="help-block"></span>
                         </div>
                     </div>
                     <div class="form-group">
@@ -797,20 +812,8 @@
                         </div>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Numéro Police :</label>
-                        <div class="col-lg-9">
-                            <input type="text" class="form-control">
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Numéro Compteur :</label>
-                        <div class="col-lg-9">
-                            <input type="text" class="form-control">
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
+                  
+                   
                     <div class="form-group">
                         <label for="" class="col-lg-3 control-label">Index de Pose :</label>
                         <div class="col-lg-9">
@@ -846,6 +849,63 @@
                     </div>
                   
                     <button class="btn btn-primary pull-right">VALIDER</button>
+                </form>
+            </div>
+
+            <div class="tab-pane" id="affecter-compteurs">
+                <legend>Affecter des compteurs à des agents ici</legend>
+                <form action="" class="form-horizontal col-lg-9">
+                        <div class="form-group">
+                            <label for="" class="col-lg-3">Réference</label>
+                            <div class="col-lg-9">
+                                <input type="text" name="form-control" class="form-control">
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label for="" class="col-lg-3">Date d'affectation</label>
+                            <div class="col-lg-9">
+                                <input type="date" class="form-control">
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label for="" class="col-lg-3">Plombier entreprise</label>
+                            <div class="col-lg-9">
+                                <select name="" id="" class="form-control">
+                                    <option value="">Kounde hypolite</option>
+                                    <option value="">Cristiano ronaldo</option>
+                                    <option value="">Mario bros</option>
+                                    <option value="">Pavel nedved</option>
+                                    <option value="">Andrea pirlo</option>
+                                    <option value="">Tom cruise</option>
+                                </select>
+                            </div>    
+                         </div>
+                         <div class="form-group">
+                            <span class="col-lg-3">Numéro Compteur</span>
+                            <span class="col-lg-3">0018552101117</span>
+                            <span class="col-lg-3">Ajouté ? Oui/non</span>
+                            <input type="checkbox" name="" id="" class="col-lg-3">
+                         </div>
+                         <div class="form-group">
+                            <span class="col-lg-3">Numéro Compteur</span>
+                            <span class="col-lg-3">0018552101117</span>
+                            <span class="col-lg-3">Ajouté ? Oui/non</span>
+                            <input type="checkbox" name="" id="" class="col-lg-3">
+                         </div>
+                         <div class="form-group">
+                            <span class="col-lg-3">Numéro Compteur</span>
+                            <span class="col-lg-3">0018552101117</span>
+                            <span class="col-lg-3">Ajouté ? Oui/non</span>
+                            <input type="checkbox" name="" id="" class="col-lg-3">
+                         </div>
+                         <div class="form-group">
+                            <span class="col-lg-3">Numéro Compteur</span>
+                            <span class="col-lg-3">0018552101117</span>
+                            <span class="col-lg-3">Ajouté ? Oui/non</span>
+                            <input type="checkbox" name="" id="" class="col-lg-3">
+                         </div>
+                      
+                         <button class="btn btn-primary pull-right">Valider</button>
                 </form>
             </div>
     </div>

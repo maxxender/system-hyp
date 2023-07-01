@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" method="post">
+    <legend>Enregistrez une demande</legend>
+    <select name="" id="Enregistrez-demande">
+      <option value="nouveau-branchement">Nouveau branchement</option>
+      <option value="reprise-abonnement">Reprise d'abonnement</option>
+      <option value="deplacement-compteur">Déplacement compteur</option>
+      <option value="vente-compteur">Vente de compteur</option>
+    </select>
+  </form>
+  <form action="" method="post">
+    <legend>Enregistrez un devis</legend>
+    <select name="" id="Enregistrez-devis" >
+      <option value="nouveau-branchement">Nouveau branchement</option>
+      <option value="reprise-abonnement">Reprise abonnement</option>
+      <option value="deplacement-compteur">Déplacement compteur</option>
+      <option value="vente-comteur">Vente de comtpeur</option>
+    </select>
+  </form>
+  <div class="result"></div>
+  <div class="container">
+
+  </div>
+
+  <script>
+  
+    document.querySelectorAll('select').forEach(select => {
+      select.addEventListener('change',(e) => {
+      console.log(e.target.innerHTML)
+      document.querySelector('.result').textContent = e.target.value
+    })
+    })
+  </script>
+</body>
+</html>

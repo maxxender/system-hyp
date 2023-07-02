@@ -2,22 +2,7 @@ body{
     margin: 0;
     padding: 0;
 }
-.nav-pills li a{
-    border: 1px solid skyblue;
-}
-.nav-pills li{
-    display: none;
-}
-.compteur{
-    margin: 5px 0;
-}
-.compteur div{
-    background-color: rgb(27, 27, 29);
-    color: white;
-    display: inline-block;
-    padding: 15px;
-    width: 145px;
-}
+
 header{
     background-color: black;
     color: aliceblue;
@@ -25,13 +10,19 @@ header{
     height: auto;
     display: flex;
 }
-#accordeon{
-    border: 1px solid blue;
-    width: 20%;
-    
+
+.action{
+    border: 1px solid greens;
 }
-.tab-content{
+
+.actions{
     border: 1px solid red;
-    width: 69%;
-    
+}
+
+.actions-container{
+    border: 1px solid blue;
+}
+
+.container{
+    display: flex;
 }

@@ -4,764 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-3.3.7/bootstrap-3.3.7/dist/css/bootstrap.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <title>System-hypo</title>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>System-hypo - no boot</title>
 </head>
 <body>
     <header>
-        <h1>system-hyp</h1>
+        <h1>system-hyp nb2</h1>
     </header>
-    <div class="actions ">
-            <div id="accordeon" class="panel-group col-lg-3">
 
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">
-                            <a href="#faire-demande"  data-parent="#accordeon"  data-toggle="collapse">ENREGISTREZ UNE DEMANDE </a>
-                        </h3>
-                    </div>
+    <div class="container">
 
-                    <div id="faire-demande" class="panel-collapse collapse in">
-                        <div class="panel-body">      
-                            <div>
-                                <ul class="nav nav-pills">
-                                    <li class="col-lg-12 col-xs-12"><a href="#demande-nouveau-branchement" class="col-lg-12 col-xs-12">Nouveau Branchement</a></li>
-                                    <li class="col-lg-12 col-xs-12"><a href="#demande-reprise-abonnement" class="col-lg-12 col-xs-12">Reprise d'abonnement</a></li>
-                                    <li class="col-lg-12 col-xs-12"><a href="#demande-deplacement-compteur" class="col-lg-12 col-xs-12">Déplacement compteur</a></li>
-                                    <li class="col-lg-12 col-xs-12"><a href="#demande-vente-compteur" class="col-lg-12 col-xs-12">Vente de compteur</a></li>
-                                    <li class="col-lg-12 col-xs-12"><a href="#demande-extension-reseau" class="col-lg-12 col-xs-12">Extension réseau</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">
-                            <a href="#faire-devis"  data-parent="#accordeon"  data-toggle="collapse">ENREGISTREZ UN DEVIS </a>
-                        </h3>
-                    </div>
-
-                    <div id="faire-devis" class="panel-collapse collapse in">
-                        <div class="panel-body">          
-                            <div>
-                                <ul class="nav nav-pills">
-                                    <li class="col-lg-12 col-xs-12"><a href="#devis-nouveau-branchement" class="col-lg-12 col-xs-12">Nouveau Branchement</a></li>
-                                    <li class="col-lg-12 col-xs-12"><a href="#devis-reprise-abonnement" class="col-lg-12 col-xs-12">Reprise d'abonnement</a></li>
-                                    <li class="col-lg-12 col-xs-12"><a href="#devis-remplacement-compteur" class="col-lg-12 col-xs-12">Deplacement compteur</a></li>
-                                    <li class="col-lg-12 col-xs-12"><a href="#devis-vente-compteur" class="col-lg-12 col-xs-12">Vente de compteur</a></li>
-                                    <li class="col-lg-12 col-xs-12"><a href="#devis-extension-reseau" class="col-lg-12 col-xs-12">Extension réseau</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">
-                            <a href="#voir-donnees"  data-parent="#accordeon"  data-toggle="collapse">VOIR LES DONNEES  : </a>
-                        </h3>
-                    </div>
-
-                    <div id="voir-donnees" class="panel-collapse collapse in">
-                        <div class="panel-body">      
-                            <div>
-                                <ul class="nav nav-pills">
-                                    <li class="col-lg-12 col-xs-12"><a href="" class="col-lg-12 col-xs-12">compteurs branchés</a></li>
-                                    <li class="col-lg-12 col-xs-12"><a href="" class="col-lg-12 col-xs-12">Abonnement repris</a></li>
-                                    <li class="col-lg-12 col-xs-12"><a href="" class="col-lg-12 col-xs-12">Compteur remplacés</a></li>
-                                    <li class="col-lg-12 col-xs-12"><a href="" class="col-lg-12 col-xs-12">Compteur vendus</a></li>
-                                    <li class="col-lg-12 col-xs-12"><a href="" class="col-lg-12 col-xs-12">Extension réseau éffectué</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
- 
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">
-                            <a href="#compteurs"  data-parent="#accordeon"  data-toggle="collapse">GESTION DES COMPTEURS  : </a>
-                        </h3>
-                    </div>
-
-                    <div id="compteurs" class="panel-collapse collapse in">
-                        <div class="panel-body">      
-                            <div>
-                                <ul class="nav nav-pills">
-                                    <li class="col-lg-12 col-xs-12"><a href="#deposer-compteur" class="col-lg-12 col-xs-12">Déposer compteur</a></li>
-                                    <li class="col-lg-12 col-xs-12"><a href="#compteur-stock" class="col-lg-12 col-xs-12">compteurs en Stocks</a></li>
-                                    <li class="col-lg-12 col-xs-12"><a href="#poser-compteur" class="col-lg-12 col-xs-12">Poser Compteur</a></li>
-                                    <li class="col-lg-12 col-xs-12"><a href="#affecter-compteurs" class="col-lg-12 col-xs-12">Affecter Compteurs</a></li>
-                                    <li class="col-lg-12 col-xs-12"><a href="#compteur-a-remplacer" class="col-lg-12 col-xs-12">Compteur à remplacer</a></li>
-                                    <li class="col-lg-12 col-xs-12"><a href="#compteur-mis-a-dispo" class="col-lg-12 col-xs-12">Compteur mis à dispo</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">
-                            <a href="#recap"  data-parent="#accordeon"  data-toggle="collapse">RECAPITULATIF: </a>
-                        </h3>
-                    </div>
-
-                    <div id="recap" class="panel-collapse collapse in">
-                        <div class="panel-body">      
-                            <div>
-                                <ul class="nav nav-pills">
-                                    <li class="col-lg-12"><a href="" class="col-lg-12">Etats mensuels</a></li>
-                                    <li class="col-lg-12"><a href="" class="col-lg-12">Autres états</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+    <div class="actions">
+            <div class="action">
+                    <legend>Enregistrez demande</legend>
+                    <select name="" id="">
+                        <option value="">Nouveau branchement</option>
+                        <option value="">Repreise abonnement</option>
+                        <option value="">Déplacement compteur</option>
+                        <option value="">Vente compteur</option>
+                        <option value="">Extension réseau</option>
+                    </select>
             </div>
-           
-            <div class="tab-content container">
-                <div class="tab-pane active" id="demande-nouveau-branchement">
+            <div class="action">
+                    <legend>Enregistrez un devis</legend>
+                    <select name="" id="">
+                        <option value="nouveau-branchement">Nouveau branchement</option>
+                        <option value="reprise-abonnenemnt">Reprise Abonnement</option>
+                        <option value="deplacement-compteur">Déplacement Comtpeur</option>
+                        <option value="vente-compteur">Vente Compteur</option>
+                        <option value="extension-reseau">Extension Réseau</option>
+                    </select>
+            </div>
+            <div class="action">
+                    <legend>Voir les données</legend>
+                    <select name="" id="">
+                        <option value="compteur-branche">Compteur Branchés</option>
+                        <option value="abonnement-reprise">Abonnement Repris</option>
+                        <option value="compteur-remplacer">Compteur Remplacés</option>
+                        <option value="compteur-vendus">Comtpeur Vendus</option>
+                        <option value="extension-reseau-effectue">Extension Réseau Effectués</option>
+                    </select>
+            </div>            
+            <div class="action">
+                    <legend>Gestions des compteurs</legend>
+                    <select name="" id="">
+                        <option value="">Déposer Comtpeur</option>
+                        <option value="">Comtpeurs en stock</option>
+                        <option value="">Poser Comtpeur</option>
+                        <option value="">Affecter Compteur</option>
+                        <option value="">Compteur à Remplacer</option>
+                        <option value="">Comtpeur Mis à Disposition</option>
+                    </select>
+            </div>
+            <div class="action">
+                <legend>RECAPITULATIF</legend>
+                <select name="" id="">
+                    <option value="">Etats Mensuels</option>
+                    <option value="">Autres Etats</option>
+                </select>
+            </div>
+        </div>
+        <div class="actions-container">
+                <div class="" id="demande-nouveau-branchement">
                     <legend>Entrez la demande pour un nouveau branchement</legend>
-                    <form action="" method="post" class="form-horizontal col-lg-6">
-                        <div class="row">
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Nom :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Prénoms :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Contact 1 :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Contact 2 :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                             <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Ville :</label>
-                                <div class="col-lg-9">
-                                    <select name="" id="" class="form-control select-ville">
-                                    
-                                    </select>
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Quartier :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Numéro de la demande :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Date de la demande :</label>
-                                <div class="col-lg-9">
-                                    <input type="date" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <button class="btn btn-primary pull-right col-lg-5">Valider</button>
-
-                        </div>
-                    </form>
+                    <?php include_once "php/form/demande/nouveau-branchement.php" ?>
                 </div>
 
-                <div class="tab-pane" id="demande-reprise-abonnement">
+                <div class="" id="demande-reprise-abonnement">
                     <legend>Entrez la demande pour une reprise d'abonnement</legend>
-                    <form action="" method="post" class="form-horizontal col-lg-6">
-                        <div class="row">
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Nom :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Prénoms :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Ville :</label>
-                                <div class="col-lg-9">
-                                    <select name="" id="" class="form-control select-ville">
-                                    </select>
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Quartier :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Contact :</label>
-                                <div class="col-lg-9">
-                                    <input type="tel" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Date de la demande :</label>
-                                <div class="col-lg-9">
-                                    <input type="date" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <button class="btn btn-primary pull-right col-lg-5">Valider</button>
-
-                        </div>
-                    </form>
+                    <?php  include_once 'php/form/demande/reprise-abonnement.php' ?>
                 </div>
 
-                <div class="tab-pane" id="demande-deplacement-compteur">
+                <div class="" id="demande-deplacement-compteur">
                     <legend>Entrez la demande pour un déplacement de compteur</legend>
-                    <form action="" method="post" class="form-horizontal col-lg-6">
-                        <div class="row">
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Nom :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Prénoms :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Ville :</label>
-                                <div class="col-lg-9">
-                                    <select name="" id="" class="form-control select-ville">
-                                    </select>
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Quartier :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Contacts :</label>
-                                <div class="col-lg-9">
-                                    <input type="tel" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Numéro de la demande :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Date de la demande :</label>
-                                <div class="col-lg-9">
-                                    <input type="date" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Montant</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <button class="btn btn-primary pull-right col-lg-5">Valider</button>
-
-                        </div>
-                    </form>
+                    <?php include_once 'php/form/demande/deplacement-compteur.php' ?>
                 </div>
 
-                <div class="tab-pane" id="demande-vente-compteur">
+                <div class="" id="demande-vente-compteur">
                     <legend>Enregistrez une demande pour une vente de compteur</legend>
-                    <form action="" method="post" class="form-horizontal col-lg-6">
-                        <div class="row">
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Nom :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Prénoms :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Ville :</label>
-                                <div class="col-lg-9">
-                                    <select name="" id="" class="form-control select-ville">
-                                    </select>
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Quartier :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Contacts :</label>
-                                <div class="col-lg-9">
-                                    <input type="tel" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Numéro de la demande :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Date de la demande :</label>
-                                <div class="col-lg-9">
-                                    <input type="date" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <button class="btn btn-primary pull-right col-lg-5">Valider</button>
-
-                        </div>
-                    </form>
+                    <?php include_once 'php/form/demande/vente-compteur.php' ?>
                 </div>
 
-                <div class="tab-pane" id="demande-extension-reseau">
+                <div class="" id="demande-extension-reseau">
                     <legend>Entrez la demande pour une extension de réseau</legend>
-                    <form action="" method="post" class="form-horizontal col-lg-6">
-                        <div class="row">
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Nom :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Prénoms :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Ville :</label>
-                                <div class="col-lg-9">
-                                    <select name="" id="" class="form-control select-ville">
-                                    </select>
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Quartier :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Contacts :</label>
-                                <div class="col-lg-9">
-                                    <input type="tel" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Numéro de la demande :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Date de la demande :</label>
-                                <div class="col-lg-9">
-                                    <input type="date" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <button class="btn btn-primary pull-right col-lg-5">Valider</button>
-
-                        </div>
-                    </form>
+                    <?php include_once 'php/form/demande/extension-reseau.php' ?>
                 </div>
 
-            <!--FORMULAIRE DEVIS NOUVEAU BRANCHEMENT-->
-                <div class="tab-pane" id="devis-nouveau-branchement">
+                <div class="" id="devis-nouveau-branchement">
                     <legend>Enregistrez un devis pour un nouveau branchement</legend>
-                    <form action="" method="post" class="form-horizontal col-lg-6">
-                        <div class="row">
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Conduite : </label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Linéair mesuré :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Encadrant :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" name="" id="" class="form-control">                                 
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">DVU :</label>
-                                <div class="col-lg-9">
-                                    <select name="" id="" class="form-control">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                    </select>
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Montant :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-
-                            <button class="btn btn-primary pull-right col-lg-5">Valider</button>
-                        </div>
-                    </form>
+                    <?php include_once 'php/form/devis/nouveau-branchement.php' ?>
                 </div>
                 
-                <!--FORMULAIRE DEVIS REMPLACEMENT COMPTEUR-->
-                <div class="tab-pane" id="devis-remplacement-compteur">
+                <div class="" id="devis-remplacement-compteur">
                     <legend>Entrez les informations pour un remplacement de compteur :</legend>
-                    <form action="" method="post" class="form-horizontal col-lg-6">
-                        <div class="row">
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">   Police :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">   Date d'exécution :</label>
-                                <div class="col-lg-9">
-                                    <input type="date" name="" id="" class="form-control">                                 
-                                </div>
-                            </div>
-                            <button class="btn btn-primary pull-right col-lg-5">Valider</button>    
-                
-                        </div>
-                    </form>
+                    <?php include_once 'php/form/devis/remplacement-comtpeur.php' ?>
                 </div>
-                <!--DEVIS REPRISE ABONNEMENT DEVIS REPRISE ABONNEMENT-->
-                <div class="tab-pane" id="devis-reprise-abonnement">
+                <div class="" id="devis-reprise-abonnement">
                 <legend>Etablir le devis pour une reprise d'abonnement</legend>
-                    <form action="" method="post" class="form-horizontal col-lg-6">
-                        <div class="row">
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Pièces manquantes :</label>
-                                <div class="col-lg-9">
-                                    <input type="text" class="form-control">
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Robinet d'arret :</label>
-                                <div class="col-lg-9">
-                                    <select name="" id="" class="form-control">
-                                        <option value="oui">OUI</option>
-                                        <option value="non">NON</option>
-                                    </select>
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Robinet équerre :</label>
-                                <div class="col-lg-9">
-                                    <select name="" id="" class="form-control">
-                                        <option value="oui">OUI</option>
-                                        <option value="non">NON</option>
-                                    </select>
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Demi-raccord :</label>
-                                <div class="col-lg-9">
-                                    <select name="" id="" class="form-control">
-                                        <option value="oui">OUI</option>
-                                        <option value="non">NON</option>
-                                    </select>
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Compteur :</label>
-                                <div class="col-lg-9">
-                                    <select name="" id="" class="form-control">
-                                        <option value="oui">OUI</option>
-                                        <option value="non">NON</option>
-                                    </select>
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-lg-3 control-label">Facturé :</label>
-                                <div class="col-lg-9">
-                                    <select name="" id="" class="form-control">
-                                        <option value="oui">OUI</option>
-                                        <option value="non">NON</option>
-                                    </select>
-                                    <span class="help-block"></span>
-                                </div>
-                            </div>
-
-                            <button class="btn btn-primary pull-right col-lg-5">Valider</button>    
-                        </div>
-                    </form>
+                <?php include_once 'php/form/devis/reprise-abonnement.php' ?>
             </div>
-            <div class="tab-pane" id="devis-vente-compteur">
+            <div class="" id="devis-vente-compteur">
                 <legend>Enregistrez un devis pour la vente de compteur </legend>
-                <form action="" method="post" class="form-horizontal col-lg-6">
-                    <div class="row">
-                        <div class="form-group">
-                            <label for="" class="col-lg-3 control-label">Robinet d'arret :</label>
-                            <div class="col-lg-9">
-                                <select name="" id="" class="form-control">
-                                    <option value="oui">OUI</option>
-                                    <option value="non">NON</option>
-                                </select>
-                                <span class="help-block"></span>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-lg-3 control-label">Robinet équerre :</label>
-                            <div class="col-lg-9">
-                                <select name="" id="" class="form-control">
-                                    <option value="oui">OUI</option>
-                                    <option value="non">NON</option>
-                                </select>
-                                <span class="help-block"></span>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-lg-3 control-label">Demi-raccord :</label>
-                            <div class="col-lg-9">
-                                <select name="" id="" class="form-control">
-                                    <option value="oui">OUI</option>
-                                    <option value="non">NON</option>
-                                </select>
-                                <span class="help-block"></span>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-lg-3 control-label">Compteur :</label>
-                            <div class="col-lg-9">
-                                <select name="" id="" class="form-control">
-                                    <option value="oui">OUI</option>
-                                    <option value="non">NON</option>
-                                </select>
-                                <span class="help-block"></span>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-lg-3 control-label">Demi-raccord :</label>
-                            <div class="col-lg-9">
-                                <select name="" id="" class="form-control">
-                                    <option value="oui">OUI</option>
-                                    <option value="non">NON</option>
-                                </select>
-                                <span class="help-block"></span>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-lg-3 control-label">Montant :</label>
-                            <div class="col-lg-9">
-                                <input type="text" class="form-control">
-                                <span class="help-block"></span>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary pull-right">VALIDER</button>
-                    </div>
-                </form>
+                <?php include_once 'php/form/devis/vente-compteur.php' ?>
             </div>
-            <div class="tab-pane" id="devis-extension-reseau">
+            <div class="" id="devis-extension-reseau">
                 <legend>Enregistrez un devis pour une extension réseau</legend>
-                <form action="" class="form-horizontal col-lg-6">
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Calibre :</label>
-                        <div class="col-lg-9">
-                            <input type="text" class="form-control">
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Linéaire :</label>
-                        <div class="col-lg-9">
-                            <input type="text" class="form-control">
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Motif :</label>
-                        <div class="col-lg-9">
-                            <select name="" id="" class="form-control">
-                                <option value="fond-propre">Fond propre</option>
-                                <option value="payer">Payée</option>
-                                <option value="projet">Projet</option>
-                            </select>
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Police (Si payé )</label>
-                        <div class="col-lg-9">
-                            <input type="text" class="form-control">
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Montant : </label>
-                        <div class="col-lg-9">
-                            <input type="text" class="form-control">
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
-                    <button class="btn btn-primary pull-right">VALIDER</button>
-                </form>
+                <?php include_once 'php/form/devis/extension-reseau.php' ?>
             </div>
 
-            <div class="tab-pane" id="deposer-compteur">
+            <div class="" id="deposer-compteur">
                 <legend>Formulaire de depose de compteur</legend>
-                <form action="" class="form-horizontal col-lg-9">
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Nom/Prénom de l'exécuant :</label>
-                        <div class="col-lg-9">
-                            <input type="text" class="form-control">
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Date de depose</label>
-                        <div class="col-lg-9">
-                            <input type="date" name="date-pose" id="" class="form-control">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Numéro Compteur :</label>
-                        <div class="col-lg-9">
-                            <input type="text" class="form-control">
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Numéro Police :</label>
-                        <div class="col-lg-9">
-                            <input type="text" class="form-control">
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Num Tél Abonné :</label>
-                        <div class="col-lg-9">
-                            <input type="text" class="form-control" name="tel-abonne">
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
-                                 
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Index de depose :</label>
-                        <div class="col-lg-9">
-                            <input type="text" class="form-control">
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Nom/Prénom du client :</label>
-                        <div class="col-lg-9">
-                            <input type="text" class="form-control">
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Adresse du client :</label>
-                        <div class="col-lg-9">
-                            <input type="text" class="form-control">
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Motif de depose :</label>
-                        <div class="col-lg-9">
-                            <select name="" id="" class="form-control">
-                                <option value="">Nouveau Branchement</option>
-                                <option value="">Remplacement Compteur</option>
-                                <option value="">Reprise Abonnement</option>
-                                <option value="">Repose de Compteur</option>
-                            </select>
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
-                    <button class="btn btn-primary pull-right" type="submit">VALIDER</button>
-                    
-                </form>
+                <?php include_once 'php/form/gestion/depose-compteur.php' ?>
             </div>
 
-            <div class="tab-pane" id="compteur-stock">
+            <div class="" id="compteur-stock">
                 <legend>Consultez la liste des compteurs en stocks</legend>
                 <div class="compteur">
                     <div>Index</div>
@@ -781,175 +139,21 @@
                 </div>
             </div>
 
-            <div class="tab-pane" id="poser-compteur">
+            <div class="" id="poser-compteur">
                 <legend>Formulaire de pose de compteur</legend>
-                <form action="" class="form-horizontal col-lg-9">
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Nom/Prénom de l'exécuant :</label>
-                        <div class="col-lg-9">
-                            <input type="text" class="form-control">
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Date de pose</label>
-                        <div class="col-lg-9">
-                            <input type="date" name="date-pose" id="" class="form-control">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Numéro Compteur :</label>
-                        <div class="col-lg-9">
-                            <input type="text" class="form-control">
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Numéro Police :</label>
-                        <div class="col-lg-9">
-                            <input type="text" class="form-control">
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Num Tél Abonné :</label>
-                        <div class="col-lg-9">
-                            <input type="text" class="form-control" name="tel-abonne">
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
-                                 
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Index de Pose :</label>
-                        <div class="col-lg-9">
-                            <input type="text" class="form-control">
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Nom/Prénom du client :</label>
-                        <div class="col-lg-9">
-                            <input type="text" class="form-control">
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Adresse du client :</label>
-                        <div class="col-lg-9">
-                            <input type="text" class="form-control">
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="col-lg-3 control-label">Motif de Pose :</label>
-                        <div class="col-lg-9">
-                            <select name="" id="" class="form-control">
-                                <option value="">Nouveau Branchement</option>
-                                <option value="">Remplacement Compteur</option>
-                                <option value="">Reprise Abonnement</option>
-                                <option value="">Repose de Compteur</option>
-                            </select>
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
-                  
-                    <button class="btn btn-primary pull-right">VALIDER</button>
-                </form>
+                <?php include_once 'php/form/gestion/pose-compteur.php' ?>
             </div>
 
-            <div class="tab-pane" id="affecter-compteurs">
+            <div class="" id="affecter-compteurs">
                 <legend>Affecter des compteurs à des agents ici</legend>
-                <form action="" class="form-horizontal col-lg-9">
-                        <div class="form-group">
-                            <label for="" class="col-lg-3">Réference</label>
-                            <div class="col-lg-9">
-                                <input type="text" name="form-control" class="form-control">
-                            </div>
-                         </div>
-                         <div class="form-group">
-                            <label for="" class="col-lg-3">Date d'affectation</label>
-                            <div class="col-lg-9">
-                                <input type="date" class="form-control">
-                            </div>
-                         </div>
-                         <div class="form-group">
-                            <label for="" class="col-lg-3">Plombier entreprise</label>
-                            <div class="col-lg-9">
-                                <select name="" id="" class="form-control">
-                                    <option value="">Kounde hypolite</option>
-                                    <option value="">Cristiano ronaldo</option>
-                                    <option value="">Mario bros</option>
-                                    <option value="">Pavel nedved</option>
-                                    <option value="">Andrea pirlo</option>
-                                    <option value="">Tom cruise</option>
-                                </select>
-                            </div>    
-                         </div>
-                         <div class="form-group">
-                            <span class="col-lg-3">Numéro Compteur</span>
-                            <span class="col-lg-3">0018552101117</span>
-                            <span class="col-lg-3">Ajouté ? Oui/non</span>
-                            <input type="checkbox" name="" id="" class="col-lg-3">
-                         </div>
-                         <div class="form-group">
-                            <span class="col-lg-3">Numéro Compteur</span>
-                            <span class="col-lg-3">0018552101117</span>
-                            <span class="col-lg-3">Ajouté ? Oui/non</span>
-                            <input type="checkbox" name="" id="" class="col-lg-3">
-                         </div>
-                         <div class="form-group">
-                            <span class="col-lg-3">Numéro Compteur</span>
-                            <span class="col-lg-3">0018552101117</span>
-                            <span class="col-lg-3">Ajouté ? Oui/non</span>
-                            <input type="checkbox" name="" id="" class="col-lg-3">
-                         </div>
-                         <div class="form-group">
-                            <span class="col-lg-3">Numéro Compteur</span>
-                            <span class="col-lg-3">0018552101117</span>
-                            <span class="col-lg-3">Ajouté ? Oui/non</span>
-                            <input type="checkbox" name="" id="" class="col-lg-3">
-                         </div>
-                      
-                         <button class="btn btn-primary pull-right">Valider</button>
-                </form>
+                <?php include_once "php/form/gestion/affecter-compteur.php" ?>
             </div>
-            <div class="tab-pane" id="compteur-a-remplacer">
+            <div class="" id="compteur-a-remplacer">
                 <legend>Formulaire compteur à remplacer</legend>
-                <form action="" class="form-horizontal col-lg-9">
-                    <div class="form-group">
-                        <label for="" class="col-lg-3">Nom du demandeur</label>
-                        <div class="col-lg-9">
-                            <input type="text" name="form-control" class="form-control">
-                        </div>
-                     </div>
-                     <div class="form-group">
-                        <label for="" class="col-lg-3">Date de la déclaration</label>
-                        <div class="col-lg-9">
-                            <input type="text" name="form-control" class="form-control">
-                        </div>
-                     </div>
-                     <div class="form-group">
-                        <label for="" class="col-lg-3">Numéro abonné</label>
-                        <div class="col-lg-9">
-                            <input type="text" name="form-control" class="form-control">
-                        </div>
-                     </div>
-                     <div class="form-group">
-                        <label for="" class="col-lg-3">N de police</label>
-                        <div class="col-lg-9">
-                            <input type="text" name="form-control" class="form-control">
-                        </div>
-                     </div>
-                     <div class="form-group">
-                        <label for="" class="col-lg-3">N Compteur</label>
-                        <div class="col-lg-9">
-                            <input type="text" name="form-control" class="form-control">
-                        </div>
-                     </div>
-                </form>
+                <?php include_once "php/form/gestion/compteur-a-remplacer.php" ?>
             </div>
+        </div>
     </div>
-
 
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

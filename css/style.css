@@ -10,17 +10,28 @@ header{
     height: auto;
     display: flex;
 }
+@media all and (max-width:968px) {
+    body{
+        background-color: red;
+    }
+}
 
 .action{
-    border: 1px solid greens;
+    border: 1px solid green;
+    width: 100%;
+    display: grid;
+    height: 2%;
+    margin: 20px 0;
 }
 
 .actions{
     border: 1px solid red;
+    width: 30%;
 }
 
 .actions-container{
     border: 1px solid blue;
+    width: 70%;
 }
 
 .container{

@@ -1,4 +1,4 @@
-<form action="" class="form-horizontal col-lg-9">
+<form action="" class="action-form">
                         <div class="form-group">
                             <label for="" class="col-lg-3">Réference</label>
                             <div class="col-lg-9">

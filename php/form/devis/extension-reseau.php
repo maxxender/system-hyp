@@ -1,4 +1,4 @@
-<form action="" class="form-horizontal col-lg-6">
+<form action="" class="action-form">
                     <div class="form-group">
                         <label for="" class="col-lg-3 control-label">Calibre :</label>
                         <div class="col-lg-9">

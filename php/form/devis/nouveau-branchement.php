@@ -1,4 +1,4 @@
-<form action="" method="post" class="form-horizontal col-lg-6">
+<form action="" method="post" class="action-form" >
                         <div class="row">
                             <div class="form-group">
                                 <label for="" class="col-lg-3 control-label">Conduite : </label>

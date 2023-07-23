@@ -1,6 +1,8 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #1aac43;
+    color: #fff;
 }
 
 header{
@@ -12,28 +14,81 @@ header{
 }
 @media all and (max-width:968px) {
     body{
-        background-color: red;
+        border: 0px;
     }
 }
 
 .action{
-    border: 1px solid green;
     width: 100%;
-    display: grid;
-    height: 2%;
     margin: 20px 0;
+    display: grid;
+    border: 1px solid black;
+}
+@media all and (max-width:768px) {
+    .action{
+        width: 46%;
+        margin: 2px 1%;
+        display: inline-block;
+        padding: 2px;
+    }
+}
+
+.action select{
+    height: 50px;
+    font-size: 1.2em;
+}
+@media all and (max-width:768px) {
+    .action select{
+        height: 27px;
+        font-size: 0.8em;
+        width: 100%;
+        margin: 0 0 1;
+        display: inline-block;
+    }
+}
+
+.action select::selection{
+    color: red;
 }
 
 .actions{
     border: 1px solid red;
-    width: 30%;
+    width: 18%;
+    margin: 0 1%;
+}
+@media all and (max-width:768px) {
+    .actions{
+        width: 98%;
+        margin: 1px 1%;
+        border: 1px solid yellow;
+    }
 }
 
 .actions-container{
-    border: 1px solid blue;
-    width: 70%;
+    border: 0px solid blue;
+    width: 60%;
+    margin: 0 5%;
+}
+@media all and (max-width:768px) {
+    .actions-container{
+        border: 1px solid blue;
+        width: 98%;
+        margin: 0 1%;
+    }
 }
 
 .container{
     display: flex;
+}
+@media all and (max-width:768px) {
+    .container{
+        display: inline-block;
+    }
+}
+
+@media all and (max-width:768px) {
+    .action-container{
+        border: 1px solid red;
+        width: 100%;
+    }
 }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: block; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  padding: 8px 16px;
+  color: #fff;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: red;
+}
+select option:hover{
+    background-color: green;
+}
+
+  </style>
+</head>
+<body>
+  <div class="custom-select" style="width:200px;">
+    <select>
+      <option class="select-items"  value="0">Select car:</option>
+      <option class="select-items" value="1">Audi</option>
+      <option class="select-items" value="2">BMW</option>
+      <option class="select-items" value="3">Citroen</option>
+      <option class="select-items" value="4">Ford</option>
+      <option class="select-items" value="5">Honda</option>
+      <option class="select-items" value="6">Jaguar</option>
+      <option class="select-items" value="7">Land Rover</option>
+      <option value="8" class="select-items">Mercedes</option>
+      <option value="9" class="select-items">Mini</option>
+      <option value="10" class="select-items">Nissan</option>
+      <option value="11" class="select-items">Toyota</option>
+      <option value="12" class="select-items">Volvo</option>
+    </select>
+  </div>
+
+  <script>
+
+  </script>
+</body>
+</html>

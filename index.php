@@ -21,11 +21,11 @@
             <div class="action">
                     <legend>Enregistrez demande</legend>
                     <select name="" id="demande">
-                        <option value="">Nouveau branchement</option>
-                        <option value="">Reprise abonnement</option>
-                        <option value="">Déplacement compteur</option>
-                        <option value="">Vente compteur</option>
-                        <option value="">Extension réseau</option>
+                        <option value="nouveau-branchement">Nouveau branchement</option>
+                        <option value="reprise-abonnement">Reprise abonnement</option>
+                        <option value="deplacement-compteur">Déplacement compteur</option>
+                        <option value="vente-compteur">Vente compteur</option>
+                        <option value="extension-reseau">Extension réseau</option>
                     </select>
             </div>
             <div class="action">

@@ -22,7 +22,7 @@ header{
     width: 100%;
     margin: 20px 0;
     display: grid;
-    border: 1px solid black;
+    border: 0px solid black;
 }
 @media all and (max-width:768px) {
     .action{
@@ -53,8 +53,9 @@ header{
 
 .actions{
     border: 1px solid red;
-    width: 18%;
-    margin: 0 1%;
+    width: 30%;
+    margin: 0 0;
+    padding: 0 1%;
 }
 @media all and (max-width:768px) {
     .actions{
@@ -65,9 +66,10 @@ header{
 }
 
 .actions-container{
-    border: 0px solid blue;
-    width: 60%;
-    margin: 0 5%;
+    border: 1px solid blue;
+    width: 70%;
+    margin: 0 0;
+    padding: 0 1%;
 }
 @media all and (max-width:768px) {
     .actions-container{
@@ -75,6 +77,10 @@ header{
         width: 98%;
         margin: 0 1%;
     }
+}
+
+.action-container{
+    display: none;
 }
 
 .container{

@@ -1,7 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #1aac43;
     color: #fff;
 }
 
@@ -16,6 +15,14 @@ header{
     body{
         border: 0px;
     }
+}
+select{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+option:hover{
+    background-color: red;
+    border: 1px solid blue;
 }
 
 .action{
@@ -52,7 +59,7 @@ header{
 }
 
 .actions{
-    border: 1px solid red;
+    border: 0px solid red;
     width: 30%;
     margin: 0 0;
     padding: 0 1%;
@@ -66,14 +73,14 @@ header{
 }
 
 .actions-container{
-    border: 1px solid blue;
+    border: 0px solid blue;
     width: 70%;
     margin: 0 0;
     padding: 0 1%;
 }
 @media all and (max-width:768px) {
     .actions-container{
-        border: 1px solid blue;
+        border: 0px solid blue;
         width: 98%;
         margin: 0 1%;
     }
